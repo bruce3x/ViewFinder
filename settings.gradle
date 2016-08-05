@@ -1,0 +1,1 @@
+include ':viewfinder-annotation', ':viewfinder-compiler', ':viewfinder', ':sample'
