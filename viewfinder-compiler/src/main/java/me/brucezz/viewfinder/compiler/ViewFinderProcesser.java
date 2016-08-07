@@ -2,6 +2,7 @@ package me.brucezz.viewfinder.compiler;
 
 import com.google.auto.service.AutoService;
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 import java.util.Map;
@@ -61,7 +62,7 @@ public class ViewFinderProcesser extends AbstractProcessor {
         return SourceVersion.latestSupported();
     }
 
-    private Map<String, AnnotatedClass> mAnnotatedClassMap = new LinkedHashMap<>();
+    private Map<String, AnnotatedClass> mAnnotatedClassMap = new HashMap<>();
 
     @Override
     public boolean process(Set<? extends TypeElement> annotations, RoundEnvironment roundEnv) {
